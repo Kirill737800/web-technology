@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Позиционирование элементов</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end; 
+        }
+        .header a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            background-color: lightblue;
+            height: 300px; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+        .block {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+        }
+        .container-2 {
+            background-color: lightgreen;
+            height: 400px; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+        .block-2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+        .container-3 {
+            background-color: lightyellow;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+        }
+        .block-3 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 10px; 
+        }
+        .position-example {
+            position: relative; 
+        }
+        .fixed-cat {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="gorbatenko_lab3.html">Основная страница</a>
+        <a href="page2.html">Позиционирование элементов</a>
+    </div>
+    <h1>Горизонтальное позиционирование</h1>
+    <div class="container">
+        <div class="block"></div>
+        <img src="cat.jpg" alt="cat" style="width: 200px; margin-left: 20px;">
+    </div>
+    <h1>Вертикальное позиционирование</h1>
+    <div class="container-2">
+        <div class="block-2"></div>
+    </div>
+    <h1>Работа с flex</h1>
+    <div class="container-3">
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+        <div class="block-3"></div>
+    </div>
+
+    
+    <h1>Работа со свойством position</h1>
+    <div class="position-example">
+        <div style="position: relative; top: 20px; left: 50px; background: red; width: 100px; height: 100px;"></div>
+    </div>
+    <img src="cat.jpg" alt="cat" class="fixed-cat">
+</body>
+</html>
