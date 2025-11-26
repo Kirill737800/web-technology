@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Страница с таблицей</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/table.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="gorbatenko_lab3.html">Основная страница</a>
+        <a href="page2.html">Позиционирование элементов</a>
+        <a href="table.html">Таблица</a>
+    </div>
+
+    <table>
+      <caption>Список студентов</caption>
+            <tr>
+                <th>id</th>
+                <th>ФИО</th>
+                <th>Номер зачетки</th>
+                <th>Номер группы</th>
+                <th>Пол</th>
+                <th>Возраст</th>
+                <th>Форма поступления</th>
+                <th>Название направления</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Иванов Владимир Петрович</td>
+                <td>000001</td>
+                <td>101</td>
+                <td>М</td>
+                <td>18</td>
+                <td>Очная</td>
+                <td>Направление 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Петрова Ирина Владимировна</td>
+                <td>000002</td>
+                <td>101</td>
+                <td>Ж</td>
+                <td>19</td>
+                <td>Очная</td>
+                <td>Направление 1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Кузнецов Иван Александрович</td>
+                <td>000003</td>
+                <td>102</td>
+                <td>М</td>
+                <td>17</td>
+                <td>Заочная</td>
+                <td>Направление 2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>000004</td>
+                <td>Иванов Иван Алексеевич</td>
+                <td>102</td>
+                <td>М</td>
+                <td>18</td>
+                <td>Заочная</td>
+                <td>Направление 2</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>000005</td>
+                <td>Иванов Генадий Григорьевич</td>
+                <td>102</td>
+                <td>17</td>
+                <td>М</td>
+                <td>Заочная</td>
+                <td>Направление 2</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="id">id</label><input type="text" id="id" />
+                </td>
+                <td><label for="fio">ФИО</label><input id="fio" /></td>
+                <td><label for="nomer">Номер зачетки</label><input id="nomer" /></td>
+                <td><label for="group">Номер группы</label><input type="number" id="group" /></td>
+                <td><label for="gender">Пол</label>
+                    <select id="gender">
+                        <option value="male">М</option>
+                        <option value="female">Ж</option>
+                    </select>
+                </td>
+                <td><label for="age">Возраст</label><input type="number" id="age" /></td>
+                <td><label for="forma">Форма поступления</label>
+                    <select id="forma">
+                        <option value="ochnaya">Очная</option>
+                        <option value="zaochnaya">Заочная</option>
+                    </select>
+                </td>
+                <td><label for="namecourse">Название направления</label><input id="namecourse" /></td>
+            </tr>
+    </table>
+
+
+</body>
+
+</html>

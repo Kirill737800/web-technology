@@ -1,0 +1,33 @@
+td {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+    background-color: rgb(33, 104, 186);
+}
+
+tr:nth-child(2n) {
+    background-color: rgb(241, 205, 255);
+}
+
+tr:nth-child(2n+1) {
+    background-color: rgb(22, 78, 61);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-last-child(1) {
+    background-color: rgb(209, 159, 20);
+}
+
+.align-right {
+     text-align: right;
+}
+
+.subm {
+    background-color: rgb(117, 74, 9);
+}
